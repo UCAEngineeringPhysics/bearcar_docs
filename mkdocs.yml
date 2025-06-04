@@ -1,10 +1,11 @@
 site_name: BearCart Documentation
-site_url: https://UCAEngineeringPhysics.github.io/BearCart
+site_url: https://UCAEngineeringPhysics.github.io/BearCart/
+repo_url: https://github.com/UCAEngineeringPhysics/BearCart/
 nav:
   - Home: index.md
     # - Quick Start: quick_start.md
     # - Wiring Guide: wiring.md
-    # - Hardware Assembly Guide: assembly.md
+  - Assembly Guide: assembly.md
     # - Software Installation and Test Guide: software.md
     # - Data Collection Guide: collect_data.md
     # - Autopilot Training Guide: train.md
