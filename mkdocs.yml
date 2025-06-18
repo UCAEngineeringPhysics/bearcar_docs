@@ -1,6 +1,6 @@
 site_name: BearCart Documentation
-site_url: https://UCAEngineeringPhysics.github.io/BearCart/
-repo_url: https://github.com/UCAEngineeringPhysics/BearCart/
+site_url: https://UCAEngineeringPhysics.github.io/BearCar/
+repo_url: https://github.com/UCAEngineeringPhysics/BearCar/
 nav:
   - Home: index.md
     # - Quick Start: quick_start.md
