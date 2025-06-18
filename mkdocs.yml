@@ -1,16 +1,16 @@
-site_name: BearCart Documentation
+site_name: BearCar Documentation
 site_url: https://UCAEngineeringPhysics.github.io/BearCar/
 repo_url: https://github.com/UCAEngineeringPhysics/BearCar/
 nav:
   - Home: index.md
     # - Quick Start: quick_start.md
     # - Wiring Guide: wiring.md
+  - Parts List: parts.md
   - Assembly Guide: assembly.md
     # - Software Installation and Test Guide: software.md
     # - Data Collection Guide: collect_data.md
     # - Autopilot Training Guide: train.md
     # - Autopilot Deployment Guide: deploy.md
-    # - Bill of Materials: BOM.md
   # - API Reference: api.md
 
 theme:
