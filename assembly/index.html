@@ -44,13 +44,49 @@
                 </li>
               </ul>
               <ul>
+                <li class="toctree-l1"><a class="" href="../wiring.md">Wiring Guide</a>
+                </li>
+              </ul>
+              <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../components/">Components List</a>
                 </li>
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Assembly Guide</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-wire-splitter">1 Wire Splitter</a>
+    <li class="toctree-l2"><a class="reference internal" href="#1-esc-upgrade">1 ESC Upgrade</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-body-cover-removal">1.1 Body Cover Removal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-stock-esc-removal">1.2 Stock ESC Removal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-quicrun-esc-installation">1.3 Quicrun ESC Installation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-wire-splitter-assembly">2 Wire Splitter Assembly</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-pre-assembled">2.1 Pre-Assembled</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-post-assembled">2.2 Post-Assembled</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-frame-bed-assembly">3 Frame Bed Assembly</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-splitter-assembly-installation">3.1 Splitter Assembly Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-rpi-power-expansion-board-installation">3.2 RPi Power Expansion Board Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-raspberry-pi-5-installation">3.3 Raspberry Pi 5 Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-pico-carrier-installation">3.4 Pico Carrier Installation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-frame-handle-assembly">4 Frame Handle Assembly</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-car-frame-integration">5 Car-Frame Integration</a>
     </li>
     </ul>
                 </li>
@@ -79,37 +115,82 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hardware-assembly-guide">Hardware Assembly Guide</h1>
-<p>We recommend you to follow the order to assemble your BearCart.</p>
-<h2 id="1-wire-splitter">1 Wire Splitter</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Item</th>
-<th style="text-align: left;">Qty.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Wire splitter</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr>
-<td style="text-align: left;">Female T-plug connector w/ wires</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr>
-<td style="text-align: left;">Male T-plug connector w/ wires</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr>
-<td style="text-align: left;">Female JST-XH2.54 connector w/ wires</td>
-<td style="text-align: left;">1</td>
-</tr>
-</tbody>
-</table>
-<p><img alt="splitter pre-assemble" src="../images/assembly/pre_splitter.jpg" />
-<img alt="splitter post-assemble" src="../images/assembly/post_splitter.jpg" /></p>
+                <h1 id="hardware-customization-guide">Hardware Customization Guide</h1>
+<p>We recommend you to follow the orders below to assemble your BearCar</p>
+<h2 id="1-esc-upgrade">1 ESC Upgrade</h2>
+<p>The RC car comes with a receiver integrated ESC, which is not ideal for hacking the drivetrain (Thank to <a href="https://docs.donkeycar.com/support/faq/">DonkeyCar's FAQ</a>).
+Therefore, we need to put a microcontroller-friendly ESC on the board.</p>
+<h3 id="11-body-cover-removal">1.1 Body Cover Removal</h3>
+<p>Remove 4 body clipping pins as circled in the picture below.
+<img alt="cover_removal" src="../images/assembly/cover_removal.png" /></p>
+<h3 id="12-stock-esc-removal">1.2 Stock ESC Removal</h3>
+<ul>
+<li>Disconnect and remove the battery.</li>
+<li>Unplug the motor wires (blue and yellow) on the ESC end.</li>
+<li>Unplug two sets of signal wires with Futaba connectors on the ESC 3x3 pin connector.</li>
+<li>Cut the zip-tie on the signal wires.</li>
+<li>Remove two screws locking the stock ESC.</li>
+</ul>
+<p>The frame that embracing the steering servo motor will be revealed after removal of the stock ESC.</p>
+<p><img alt="esc_removal" src="../images/assembly/esc_removal.png" /></p>
+<h3 id="13-quicrun-esc-installation">1.3 Quicrun ESC Installation</h3>
+<ul>
+<li>You can simply tape the Quicrun ESC on top of the servo frame.</li>
+<li>Connect the motor wires (yellow and blue) to the new ESC (matching the color is recommended).</li>
+<li>It is recommended to mount the new ESC in direction as below picture shown.</li>
+<li>Set the driving mode to <strong>F/R</strong> by removing the jumper cap on the top row of the 3x2 header pins.</li>
+<li>Notify the ESC that <strong>LiPO</strong> battery will be used by placing the jumper cat on the bottom row of the 3x2 header pins.</li>
+</ul>
+<p><img alt="esc_install" src="../images/assembly/esc_install.jpg" /></p>
+<h2 id="2-wire-splitter-assembly">2 Wire Splitter Assembly</h2>
+<p>The wire splitter splits the 2 input channel into 4 output channels.
+The channels in same color are connected together.
+We recommend you to plug positive wires to the orange channels, and negative wires to the blue channels.</p>
+<ul>
+<li>(Optional) Peel extra skin off the wires. Or the levers may bite the skins instead of the exposed metal (broken circuit).</li>
+<li>Insert wires with <strong>male</strong> T-plug connector to the <strong>input</strong> end.</li>
+<li>Insert wires with <strong>female</strong> T-plug connector to the <strong>output</strong> end.</li>
+<li>Insert wires with JST-XH connector to the <strong>output</strong> end.</li>
+</ul>
+<blockquote>
+<p><strong>WARNING:</strong> Finger pinch hazard.</p>
+</blockquote>
+<h3 id="21-pre-assembled">2.1 Pre-Assembled</h3>
+<p><img alt="splitter pre-assemble" src="../images/assembly/pre_splitter.jpg" /></p>
+<h3 id="22-post-assembled">2.2 Post-Assembled</h3>
+<p><img alt="splitter post-assemble" src="../images/assembly/post_splitter.jpg" /></p>
+<h2 id="3-frame-bed-assembly">3 Frame Bed Assembly</h2>
+<ol>
+<li>Wire Splitter Assembly Installation (2xM2.5-12 screws and 2xM2.5 nuts)</li>
+<li>Stack Raspberry Pi 5 (4xM2.5-15 standoffs)</li>
+<li>Plug in camera ribbon (22-Pin to 15-Pin RPi camera cable)</li>
+<li>Stack Pico carrier board (4xM2.5-6 screws) and Raspberry Pi Pico.</li>
+</ol>
+<h3 id="31-splitter-assembly-installation">3.1 Splitter Assembly Installation</h3>
+<p><img alt="splitter install" src="../images/assembly/splitter_install.jpg" /></p>
+<h3 id="32-rpi-power-expansion-board-installation">3.2 RPi Power Expansion Board Installation</h3>
+<p><img alt="peb_install" src="images/assembly/peb_install.jpg" /></p>
+<h3 id="33-raspberry-pi-5-installation">3.3 Raspberry Pi 5 Installation</h3>
+<p><img alt="pi5_install" src="images/assembly/pi5_install.jpg" /></p>
+<h3 id="34-pico-carrier-installation">3.4 Pico Carrier Installation</h3>
+<p><img alt="carrier_install" src="images/assembly/carrier_install.jpg" /></p>
+<h2 id="4-frame-handle-assembly">4 Frame Handle Assembly</h2>
+<ol>
+<li>Assemble camera module.</li>
+<li>Mount camera to the case.</li>
+<li>Attach camera case assembly to handle.</li>
+<li>Assemble the handle and the bed.</li>
+</ol>
+<h2 id="5-car-frame-integration">5 Car-Frame Integration</h2>
+<ol>
+<li>Attach ESC switch.</li>
+<li>Fasten frame to car body.</li>
+<li>Connect ESC and servo signal wires to Pico carrier board.</li>
+<li>Connect Pico to Pi 5 with Micro-USB cable</li>
+<li>Connect ESC power wires.</li>
+<li>Connect RPi power expansion board power input wires.</li>
+<li>Connect battery.</li>
+</ol>
               
             </div>
           </div><footer>
