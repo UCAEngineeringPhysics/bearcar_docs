@@ -1,5 +1,7 @@
 # Welcome to BearCar
 
+![bearcar](images/bearcar_annotate.png)
+
 Welcome to the playground of behavioral cloning self-driving.
 Let's pick an off-the-shelf RC car, and teach it how to race.
 
