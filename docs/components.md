@@ -2,7 +2,7 @@
 
 ## 1 On-Board Components
 
-![main components](images/parts/main.png)
+![main components](images/components/main.png)
 
 | Index | Item                             | Qty.   | Description | Link |
 | :---: | :---                             | :---:  |  :--- | :--- |
