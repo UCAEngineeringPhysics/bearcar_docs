@@ -33,9 +33,9 @@
 | 25 | Pi Camera Cable | 1 | 22-Pin to 15-pin | [https://a.co/d/0rL2ziT](https://a.co/d/0rL2ziT) |
 
 ## 2 Raspberry Pi Peripherals
->
-> (To be continued)
+
+![pi peripherals](images/components/pi_peripherals.png)
 
 ## 3 Handy Tools
->
-> (To be continued)
+
+![tools](images/components/tools.png)
