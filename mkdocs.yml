@@ -4,7 +4,7 @@ repo_url: https://github.com/UCAEngineeringPhysics/BearCar/
 nav:
   - Home: index.md
     # - Quick Start: quick_start.md
-    # - Wiring Guide: wiring.md
+  - Wiring Guide: wiring.md
   - Components List: components.md
   - Assembly Guide: assembly.md
     # - Software Installation and Test Guide: software.md
