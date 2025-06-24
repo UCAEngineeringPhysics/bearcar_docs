@@ -46,6 +46,12 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Wiring Guide</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#breadboard-experiment-with-pico-esc-and-servo">Breadboard Experiment with Pico, ESC and Servo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#drivetrain-wiring">Drivetrain Wiring</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#explain-the-drivetrain">Explain the Drivetrain</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -82,7 +88,33 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="wiring-diagrams">Wiring Diagrams</h1>
-<p><img alt="pico esc servo" src="../images/wiring/pico_esc_servo.png" /></p>
+<h2 id="breadboard-experiment-with-pico-esc-and-servo">Breadboard Experiment with Pico, ESC and Servo</h2>
+<p>For electronics beginners, we highly recommend to set up the circuit on a breadboard following the diagram below.</p>
+<blockquote>
+<p><strong>Note:</strong> this is just the signal paths.</p>
+</blockquote>
+<p><img alt="breadboard_pico_esc_servo" src="../images/wiring/bb_pico_esc_servo.png" /></p>
+<h2 id="drivetrain-wiring">Drivetrain Wiring</h2>
+<p>Connect the battery to ESC, so that the Pico board can order it (ESC) to squeeze some juice and spin the motors.</p>
+<p><img alt="drivetrain_electric" src="../images/wiring/drivetrain_electric.png" /></p>
+<h2 id="explain-the-drivetrain">Explain the Drivetrain</h2>
+<ul>
+<li>The ESC (Electronic Speed Controller) governs the main engine motor's speed.
+And thus, it determines how fast the BearCar can go.</li>
+<li>The servo motor (underneath ESC) has a position feedback circuit built-in.
+Hence, it determines the steering angle of the BearCar.</li>
+<li>The Quicrun 1060 Brushed ESC has a BEC (Battery Elimination Circuit).
+It is capable of outputting 6V 3A electric energy.
+It is used to power the steering servo, and thus eliminates the need for another battery.</li>
+<li>Neither Raspberry Pi 5 nor the Pico board is powerful enough to directly drive the motors (especially the main engine).
+So, a battery pack like a LiPO battery is needed to satisfy the energy hungry motors.</li>
+<li>The Pico board uses 50Hz PWM (Pulse Width Modulation) signal to tell ESC how fast the main engine should run.</li>
+</ul>
+<p><img alt="esc_motor_pwm" src="../images/wiring/esc_motor_pwm.png" /></p>
+<ul>
+<li>The Pico board also uses 50Hz PWM signal to tell servo what angle it should spin to.</li>
+</ul>
+<p><img alt="servo_pwm" src="../images/wiring/servo_pwm.png" /></p>
               
             </div>
           </div><footer>
