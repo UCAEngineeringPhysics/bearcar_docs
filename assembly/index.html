@@ -85,8 +85,26 @@
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#4-frame-handle-assembly">4 Frame Handle Assembly</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-handle-bed-assembly">4.1 Handle Bed Assembly</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-raspberry-pi-camera-assembly">4.2 Raspberry Pi Camera Assembly</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-camera-assembly-installation">4.3 Camera Assembly Installation</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#5-car-frame-integration">5 Car-Frame Integration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-attach-esc-switch">5.1 Attach ESC switch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-esc-and-servo-wiring">5.2 ESC and Servo Wiring</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#53-connect-power-wires">5.3 Connect Power Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#54-finish-frame-assembly">5.4 Finish Frame Assembly</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -160,37 +178,65 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 <h3 id="22-post-assembled">2.2 Post-Assembled</h3>
 <p><img alt="splitter post-assemble" src="../images/assembly/post_splitter.jpg" /></p>
 <h2 id="3-frame-bed-assembly">3 Frame Bed Assembly</h2>
-<ol>
-<li>Wire Splitter Assembly Installation (2xM2.5-12 screws and 2xM2.5 nuts)</li>
-<li>Stack Raspberry Pi 5 (4xM2.5-15 standoffs)</li>
-<li>Plug in camera ribbon (22-Pin to 15-Pin RPi camera cable)</li>
-<li>Stack Pico carrier board (4xM2.5-6 screws) and Raspberry Pi Pico.</li>
-</ol>
 <h3 id="31-splitter-assembly-installation">3.1 Splitter Assembly Installation</h3>
+<ul>
+<li>2xM2.5-12 screws and 2xM2.5 nuts.</li>
+</ul>
 <p><img alt="splitter install" src="../images/assembly/splitter_install.jpg" /></p>
 <h3 id="32-rpi-power-expansion-board-installation">3.2 RPi Power Expansion Board Installation</h3>
-<p><img alt="peb_install" src="images/assembly/peb_install.jpg" /></p>
+<ul>
+<li>4xM2.5-15 standoffs</li>
+<li>(Optional) 4xM2.5 nuts, for under the bed secure.</li>
+</ul>
+<p><img alt="peb_install" src="../images/assembly/peb_install.png" /></p>
 <h3 id="33-raspberry-pi-5-installation">3.3 Raspberry Pi 5 Installation</h3>
-<p><img alt="pi5_install" src="images/assembly/pi5_install.jpg" /></p>
+<ul>
+<li>22-Pin to 15-Pin RPi camera cable.</li>
+<li>It is recommended to attach the camera cable at this step.</li>
+<li>Watch out camera cable's direction.</li>
+</ul>
+<p><img alt="pi5_install" src="../images/assembly/pi5_install.jpg" /></p>
 <h3 id="34-pico-carrier-installation">3.4 Pico Carrier Installation</h3>
-<p><img alt="carrier_install" src="images/assembly/carrier_install.jpg" /></p>
+<ul>
+<li>4xM2.5-6 screws</li>
+</ul>
+<p><img alt="carrier_install" src="../images/assembly/carrier_install.jpg" /></p>
 <h2 id="4-frame-handle-assembly">4 Frame Handle Assembly</h2>
-<ol>
-<li>Assemble the handle and the bed.</li>
-<li>Assemble camera module.</li>
-<li>Mount camera to the case.</li>
-<li>Attach camera case assembly to handle.</li>
-</ol>
+<h3 id="41-handle-bed-assembly">4.1 Handle Bed Assembly</h3>
+<ul>
+<li>3xM4-10 screws</li>
+</ul>
+<p><img alt="handle_bed_assemble" src="../images/assembly/handle_bed_assemble.jpg" /></p>
+<h3 id="42-raspberry-pi-camera-assembly">4.2 Raspberry Pi Camera Assembly</h3>
+<ul>
+<li>Watch out for camera cable's direction.</li>
+</ul>
+<p><img alt="picam_assemble" src="../images/assembly/picam_assemble.jpg" /></p>
+<h3 id="43-camera-assembly-installation">4.3 Camera Assembly Installation</h3>
+<p><img alt="cam_install" src="../images/assembly/cam_install.jpg" /></p>
 <h2 id="5-car-frame-integration">5 Car-Frame Integration</h2>
-<ol>
-<li>Attach ESC switch.</li>
-<li>Fasten frame to car body.</li>
-<li>Connect ESC and servo signal wires to Pico carrier board.</li>
-<li>Connect Pico to Pi 5 with Micro-USB cable</li>
-<li>Connect ESC power wires.</li>
-<li>Connect RPi power expansion board power input wires.</li>
+<h3 id="51-attach-esc-switch">5.1 Attach ESC switch</h3>
+<p><img alt="switch_install" src="../images/assembly/switch_install.jpg" /></p>
+<h3 id="52-esc-and-servo-wiring">5.2 ESC and Servo Wiring</h3>
+<ul>
+<li>White - Sig</li>
+<li>Red - VBEC</li>
+<li>Black - GND</li>
+</ul>
+<p><img alt="esc_servo_carrier" src="../images/assembly/esc_servo_carrier.jpg" /></p>
+<h3 id="53-connect-power-wires">5.3 Connect Power Wires</h3>
+<ul>
+<li>Male T-plug to battery.</li>
+<li>Female T-plug to ESC.</li>
+<li>JST-XH to RPi power expansion board.</li>
+</ul>
+<h3 id="54-finish-frame-assembly">5.4 Finish Frame Assembly</h3>
+<ul>
+<li>Fasten frame bed to car chassis.</li>
+<li>Connect Pico and Pi 5 using micro-USB cable.</li>
 <li>Connect battery.</li>
-</ol>
+</ul>
+<p><img alt="finish_assemble" src="../images/bearcar_annotate.png" /></p>
               
             </div>
           </div><footer>
