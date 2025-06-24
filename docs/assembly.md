@@ -57,40 +57,75 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 
 ## 3 Frame Bed Assembly
 
-1. Wire Splitter Assembly Installation (2xM2.5-12 screws and 2xM2.5 nuts)
-2. Stack Raspberry Pi 5 (4xM2.5-15 standoffs)
-3. Plug in camera ribbon (22-Pin to 15-Pin RPi camera cable)
-4. Stack Pico carrier board (4xM2.5-6 screws) and Raspberry Pi Pico.
-
 ### 3.1 Splitter Assembly Installation
+
+- 2xM2.5-12 screws and 2xM2.5 nuts.
 
 ![splitter install](images/assembly/splitter_install.jpg)
 
 ### 3.2 RPi Power Expansion Board Installation
 
-![peb_install](images/assembly/peb_install.jpg)
+- 4xM2.5-15 standoffs
+- (Optional) 4xM2.5 nuts, for under the bed secure.
+
+![peb_install](images/assembly/peb_install.png)
 
 ### 3.3 Raspberry Pi 5 Installation
+
+- 22-Pin to 15-Pin RPi camera cable.
+- It is recommended to attach the camera cable at this step.
+- Watch out camera cable's direction.
 
 ![pi5_install](images/assembly/pi5_install.jpg)
 
 ### 3.4 Pico Carrier Installation
 
+- 4xM2.5-6 screws
+
 ![carrier_install](images/assembly/carrier_install.jpg)
 
 ## 4 Frame Handle Assembly
 
-1. Assemble camera module.
-2. Mount camera to the case.
-3. Attach camera case assembly to handle.
-4. Assemble the handle and the bed.
+### 4.1 Handle Bed Assembly
+
+- 3xM4-10 screws
+
+![handle_bed_assemble](images/assembly/handle_bed_assemble.jpg)
+
+### 4.2 Raspberry Pi Camera Assembly
+
+- Watch out for camera cable's direction.
+
+![picam_assemble](images/assembly/picam_assemble.jpg)
+
+### 4.3 Camera Assembly Installation
+
+![cam_install](images/assembly/cam_install.jpg)
 
 ## 5 Car-Frame Integration
 
-1. Attach ESC switch.
-2. Fasten frame to car body.
-3. Connect ESC and servo signal wires to Pico carrier board.
-4. Connect Pico to Pi 5 with Micro-USB cable
-5. Connect ESC power wires.
-6. Connect RPi power expansion board power input wires.
-7. Connect battery.
+### 5.1 Attach ESC switch
+
+![switch_install](images/assembly/switch_install.jpg)
+
+### 5.2 ESC and Servo Wiring
+
+- White - Sig
+- Red - VBEC
+- Black - GND
+
+![esc_servo_carrier](images/assembly/esc_servo_carrier.jpg)
+
+### 5.3 Connect Power Wires
+
+- Male T-plug to battery.
+- Female T-plug to ESC.
+- JST-XH to RPi power expansion board.
+
+### 5.4 Finish Frame Assembly
+
+- Fasten frame bed to car chassis.
+- Connect Pico and Pi 5 using micro-USB cable.
+- Connect battery.
+
+![finish_assemble](images/bearcar_annotate.png)
