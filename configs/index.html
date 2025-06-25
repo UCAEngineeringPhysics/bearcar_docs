@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://UCAEngineeringPhysics.github.io/BearCar/configs/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Pilot Configurations - BearCar Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pilot Configurations";
+        var mkdocs_page_input_path = "configs.md";
+        var mkdocs_page_url = "/BearCar/configs/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> BearCar Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../wiring/">Wiring Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../components/">Components List</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../assembly/">Assembly Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gamepad/">Gamepad Keymap</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Pilot Configurations</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#steering_joy_axis">steering_joy_axis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#throttle_joy_axis">throttle_joy_axis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#record_btn">record_btn</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pause_btn">pause_btn</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stop_btn">stop_btn</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steering_left">steering_left</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steering_right">steering_right</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steering_center">steering_center</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steering_range">steering_range</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#throttle_neutral">throttle_neutral</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#throttle_fwd_range">throttle_fwd_range</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#throttle_rev_range">throttle_rev_range</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#throttle_limit">throttle_limit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#frame_rate">frame_rate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#record_cap">record_cap</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">BearCar Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Pilot Configurations</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UCAEngineeringPhysics/BearCar/edit/master/docs/configs.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="pilot-configuration">Pilot Configuration</h1>
+<p>We use <code>scripts/configs.json</code> to configure the BearCar's driving experience for both human and non-human pilots.</p>
+<h2 id="steering_joy_axis"><code>steering_joy_axis</code></h2>
+<p><strong>Default Value:</strong> 0</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code></p>
+<p>Index number of the joystick axis on gamepad for steering BearCar.</p>
+<h2 id="throttle_joy_axis"><code>throttle_joy_axis</code></h2>
+<p><strong>Default Value:</strong> 4</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code></p>
+<p>Index number of the joystick axis on gamepad for propelling BearCar.</p>
+<h2 id="record_btn"><code>record_btn</code></h2>
+<p><strong>Default Value:</strong> 5</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code></p>
+<p>Index number of the gamepad button for activate/deactivate data recording.</p>
+<h2 id="pause_btn"><code>pause_btn</code></h2>
+<p><strong>Default Value:</strong> 4</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Index number of the gamepad button for pause/resume driving.</p>
+<h2 id="stop_btn"><code>stop_btn</code></h2>
+<p><strong>Default Value:</strong> 0</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Index number of the gamepad button for emergency stop (<strong>terminates program</strong>).</p>
+<h2 id="steering_left"><code>steering_left</code></h2>
+<blockquote>
+<p>Deprecated</p>
+</blockquote>
+<h2 id="steering_right"><code>steering_right</code></h2>
+<blockquote>
+<p>Deprecated</p>
+</blockquote>
+<h2 id="steering_center"><code>steering_center</code></h2>
+<p><strong>Default Value:</strong> 15000000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Pulse width for centering the steering servo (unit: nanosecond).</p>
+<h2 id="steering_range"><code>steering_range</code></h2>
+<p><strong>Default Value:</strong> 300000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Max pulse width increment/decrement from steering center.</p>
+<h2 id="throttle_neutral"><code>throttle_neutral</code></h2>
+<p><strong>Default Value:</strong> 15000000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Pulse width for 0 throttle (unit: nanosecond).</p>
+<h2 id="throttle_fwd_range"><code>throttle_fwd_range</code></h2>
+<p><strong>Default Value:</strong> 3000000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Max pulse width increment throttle from neutral to drive BearCar forward.</p>
+<h2 id="throttle_rev_range"><code>throttle_rev_range</code></h2>
+<p><strong>Default Value:</strong> 4000000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Max pulse width decrement throttle from neutral to drive BearCar backward.</p>
+<h2 id="throttle_limit"><code>throttle_limit</code></h2>
+<p><strong>Default Value:</strong> 0.35</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>From 0 (stop) to 1 (full throttle).
+Speed cap for BearCar.</p>
+<h2 id="frame_rate"><code>frame_rate</code></h2>
+<p><strong>Default Value:</strong> 24</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code>, <code>autopilot</code></p>
+<p>Camera frames per second</p>
+<h2 id="record_cap"><code>record_cap</code></h2>
+<p><strong>Default Value:</strong> 15000</p>
+<p><strong>Pilot Modes:</strong> <code>teleop</code></p>
+<p>Max number of data collection</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../gamepad/" class="btn btn-neutral float-left" title="Gamepad Keymap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UCAEngineeringPhysics/BearCar/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../gamepad/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
