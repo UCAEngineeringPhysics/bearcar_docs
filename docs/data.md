@@ -12,7 +12,7 @@ uv run teleop.py
 - Press `Pause` button to start/pause BearCar.
 - Press `Record` button to activate/deactivate data recording.
 - Data will be saved to `~/BearCar/data/YYYY-MM-DD-HH-MM/`
-- Valid data directory contains: `image/` directory and `labels.csv` file.
+- Valid data directory contains: `~/BearCar/data/YYYY-MM-DD-HH-MM/images/` directory and `labels.csv` file.
 
 ## Data Transfer
 
