@@ -10,6 +10,7 @@ ssh USERNAME@192.168.0.112
 
 ```bash
 cd ~
+rm -rf ~/BearCar
 git clone https://github.com/UCAEngineeringPhysics/BearCar.git
 cd ~/BearCar
 ./setup_pi_env.sh
