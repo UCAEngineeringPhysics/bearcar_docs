@@ -8,6 +8,7 @@ nav:
   - Components List: components.md
   - Assembly Guide: assembly.md
   - Gamepad Keymap: gamepad.md
+  - Mode Indicator: led.md
   - Pilot Configurations: configs.md
     # - Software Installation and Test Guide: software.md
     # - Data Collection Guide: collect_data.md
