@@ -7,6 +7,7 @@ nav:
   - Wiring Guide: wiring.md
   - Components List: components.md
   - Assembly Guide: assembly.md
+  - Gamepad Keymap: gamepad.md
     # - Software Installation and Test Guide: software.md
     # - Data Collection Guide: collect_data.md
     # - Autopilot Training Guide: train.md
