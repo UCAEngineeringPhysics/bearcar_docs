@@ -6,6 +6,15 @@
 ssh USERNAME@192.168.0.112
 ```
 
+## First Time Server Setup
+
+```bash
+cd ~
+git clone https://github.com/UCAEngineeringPhysics/BearCar.git
+cd ~/BearCar
+./setup_pi_env.sh
+```
+
 ## Start Training
 
 ```bash
@@ -22,3 +31,4 @@ The best model candidate will be saved at `~/BearCar/data/YYYY-MM-DD-HH-MM/best_
 ```bash
 rsync -av --partial ~/BearCar/data/YYYY-MM-DD-HH-MM/best_model.pth USERNAME@192.168.0.IP:~/BearCar/models/pilot.pth
 ```
+
