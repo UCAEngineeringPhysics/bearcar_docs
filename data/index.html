@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://UCAEngineeringPhysics.github.io/BearCar/wiring/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://UCAEngineeringPhysics.github.io/BearCar/data/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Wiring Guide - BearCar Documentation</title>
+    <title>Data Collection Guide - BearCar Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Wiring Guide";
-        var mkdocs_page_input_path = "wiring.md";
-        var mkdocs_page_url = "/BearCar/wiring/";
+        var mkdocs_page_name = "Data Collection Guide";
+        var mkdocs_page_input_path = "data.md";
+        var mkdocs_page_url = "/BearCar/data/";
       </script>
     
     <!--[if lt IE 9]>
@@ -43,16 +43,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Wiring Guide</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#breadboard-experiment-with-pico-esc-and-servo">Breadboard Experiment with Pico, ESC and Servo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#drivetrain-wiring">Drivetrain Wiring</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#explain-the-drivetrain">Explain the Drivetrain</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../wiring/">Wiring Guide</a>
                 </li>
               </ul>
               <ul>
@@ -75,8 +67,16 @@
                 <li class="toctree-l1"><a class="reference internal" href="../configs/">Pilot Configurations</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../data/">Data Collection Guide</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Data Collection Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#start-tele-operation">Start Tele-Operation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hints">Hints</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-transfer">Data Transfer</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -101,9 +101,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Wiring Guide</li>
+      <li class="breadcrumb-item active">Data Collection Guide</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/UCAEngineeringPhysics/BearCar/edit/master/docs/wiring.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/UCAEngineeringPhysics/BearCar/edit/master/docs/data.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -111,40 +111,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="wiring-diagrams">Wiring Diagrams</h1>
-<h2 id="breadboard-experiment-with-pico-esc-and-servo">Breadboard Experiment with Pico, ESC and Servo</h2>
-<p>For electronics beginners, we highly recommend to set up the circuit on a breadboard following the diagram below.</p>
-<blockquote>
-<p><strong>Note:</strong> this is just the signal paths.</p>
-</blockquote>
-<p><img alt="breadboard_pico_esc_servo" src="../images/wiring/bb_pico_esc_servo.png" /></p>
-<h2 id="drivetrain-wiring">Drivetrain Wiring</h2>
-<p>Connect the battery to ESC, so that the Pico board can order it (ESC) to squeeze some juice and spin the motors.</p>
-<p><img alt="drivetrain_electric" src="../images/wiring/drivetrain_electric.png" /></p>
-<h2 id="explain-the-drivetrain">Explain the Drivetrain</h2>
+                <h1 id="data-collection-guide">Data Collection Guide</h1>
+<h2 id="start-tele-operation">Start Tele-Operation</h2>
+<pre><code class="language-bash">cd ~/BearCar/scripts
+uv run teleop.py
+</code></pre>
+<h2 id="hints">Hints</h2>
 <ul>
-<li>The ESC (Electronic Speed Controller) governs the main engine motor's speed.
-And thus, it determines how fast the BearCar can go.</li>
-<li>The servo motor (underneath ESC) has a position feedback circuit built-in.
-Hence, it determines the steering angle of the BearCar.</li>
-<li>The Quicrun 1060 Brushed ESC has a BEC (Battery Elimination Circuit).
-It is capable of outputting 6V 3A electric energy.
-It is used to power the steering servo, and thus eliminates the need for another battery.</li>
-<li>Neither Raspberry Pi 5 nor the Pico board is powerful enough to directly drive the motors (especially the main engine).
-So, a battery pack like a LiPO battery is needed to satisfy the energy hungry motors.</li>
-<li>The Pico board uses 50Hz PWM (Pulse Width Modulation) signal to tell ESC how fast the main engine should run.</li>
+<li>Press <code>Pause</code> button to start/pause BearCar.</li>
+<li>Press <code>Record</code> button to activate/deactivate data recording.</li>
+<li>Data will be saved to <code>~/BearCar/data/YYYY-MM-DD-HH-MM/</code></li>
+<li>Valid data directory contains: <code>image/</code> directory and <code>labels.csv</code> file.</li>
 </ul>
-<p><img alt="esc_motor_pwm" src="../images/wiring/esc_motor_pwm.png" /></p>
-<ul>
-<li>The Pico board also uses 50Hz PWM signal to tell servo what angle it should spin to.</li>
-</ul>
-<p><img alt="servo_pwm" src="../images/wiring/servo_pwm.png" /></p>
+<h2 id="data-transfer">Data Transfer</h2>
+<p>To train a autopilot faster, you will need to transfer your data to a deep learning server.
+For example:</p>
+<pre><code class="language-bash">rsync -av --prgress --partial ~/BearCar/data/YYYY-MM-DD-HH-MM USERNAME@192.168.0.112:~/BearCar/data/
+</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../components/" class="btn btn-neutral float-right" title="Components List">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../configs/" class="btn btn-neutral float-left" title="Pilot Configurations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../learn/" class="btn btn-neutral float-right" title="Autopilot Training Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -171,10 +160,10 @@ So, a battery pack like a LiPO battery is needed to satisfy the energy hungry mo
         </span>
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../configs/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../components/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../learn/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
