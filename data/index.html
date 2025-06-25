@@ -112,6 +112,9 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="data-collection-guide">Data Collection Guide</h1>
+<blockquote>
+<p><strong>All in Raspberry Pi</strong></p>
+</blockquote>
 <h2 id="start-tele-operation">Start Tele-Operation</h2>
 <pre><code class="language-bash">cd ~/BearCar/scripts
 uv run teleop.py
@@ -121,12 +124,25 @@ uv run teleop.py
 <li>Press <code>Pause</code> button to start/pause BearCar.</li>
 <li>Press <code>Record</code> button to activate/deactivate data recording.</li>
 <li>Data will be saved to <code>~/BearCar/data/YYYY-MM-DD-HH-MM/</code></li>
-<li>Valid data directory contains: <code>~/BearCar/data/YYYY-MM-DD-HH-MM/images/</code> directory and <code>labels.csv</code> file.</li>
+<li>Valid data directory contains: <code>~/BearCar/data/YYYY-MM-DD-HH-MM/images/</code> directory and <code>~/BearCar/data/YYYY-MM-DD-HH-MM/labels.csv</code> file.</li>
 </ul>
+<blockquote>
+<p><code>YYYY-MM-DD-HH-MM</code> is the date and time when you start the <code>teleop.py</code>.
+For example, <code>2000-01-02-03-04</code></p>
+</blockquote>
 <h2 id="data-transfer">Data Transfer</h2>
 <p>To train a autopilot faster, you will need to transfer your data to a deep learning server.
 For example:</p>
-<pre><code class="language-bash">rsync -av --prgress --partial ~/BearCar/data/YYYY-MM-DD-HH-MM USERNAME@192.168.0.112:~/BearCar/data/
+<pre><code class="language-bash">rsync -av --progress --partial ~/BearCar/data/YYYY-MM-DD-HH-MM USERNAME@192.168.0.112:~/BearCar/data/
+</code></pre>
+<blockquote>
+<ul>
+<li>Please replace <code>YYYY-MM-DD-HH-MM</code> with actual date and time of the data directory</li>
+<li>Please replace <code>USERNAME</code> with your username on the deep learning server.</li>
+<li>Syntax:</li>
+</ul>
+</blockquote>
+<pre><code class="language-bash">rsync -av --progress --partial &lt;path_to_stamped_data&gt; &lt;username&gt;@&lt;ip_address&gt;:&lt;bearcar_directory&gt;/data/
 </code></pre>
               
             </div>
