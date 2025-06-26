@@ -1,6 +1,6 @@
 # Data Collection Guide
 
-> __All in Raspberry Pi__
+> __On Raspberry Pi__
 
 ## Start Tele-Operation
 
