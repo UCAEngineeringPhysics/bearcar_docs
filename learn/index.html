@@ -82,6 +82,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#transfer-model-back-to-rpi">Transfer Model Back to RPi</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choose-other-models">Choose Other Models</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -135,6 +137,24 @@ The best model candidate will be saved at <code>~/BearCar/data/YYYY-MM-DD-HH-MM/
 <h2 id="transfer-model-back-to-rpi">Transfer Model Back to RPi</h2>
 <pre><code class="language-bash">rsync -av --partial ~/BearCar/data/YYYY-MM-DD-HH-MM/best_model.pth USERNAME@192.168.0.IP:~/BearCar/models/pilot.pth
 </code></pre>
+<h2 id="choose-other-models">Choose Other Models</h2>
+<p>There are chances you are not satisfied with the <code>best_model</code> picked automatically by the <code>learn.py</code>.
+To take a peek on all the models, you will want to list all of them using following commands:</p>
+<pre><code class="language-bash">cd ~/BearCar/data/YYYY-MM-DD-HH-MM/models
+ls
+</code></pre>
+<p>An example is as below,</p>
+<pre><code class="language-console">ep10-mse0.3155.pth  ep2-mse0.3539.pth  ep5-mse0.3169.pth  ep8-mse0.3158.pth
+ep11-mse0.3135.pth  ep3-mse0.3436.pth  ep6-mse0.3100.pth  ep9-mse0.3174.pth
+ep1-mse0.3611.pth   ep4-mse0.3288.pth  ep7-mse0.3121.pth  learning_curve.png
+</code></pre>
+<p>The default best model is <code>ep6-mse0.3100.pth</code>.
+This model may not work out.
+So, you want to try your second best model <strong>before</strong> the default, which should be <code>ep5-mse0.3169.pth</code>.
+Then, transfer it to Raspberry Pi</p>
+<pre><code class="language-bash">rsync -av --partial ~/BearCar/data/YYYY-MM-DD-HH-MM/models/ep5-mse0.3169.pth USERNAME@192.168.0.IP:~/BearCar/models/pilot.pth
+</code></pre>
+<p>This will replace the previous best model on your Raspberry Pi though.</p>
               
             </div>
           </div><footer>
