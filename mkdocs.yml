@@ -1,20 +1,79 @@
 site_name: BearCar Documentation
-site_url: https://UCAEngineeringPhysics.github.io/BearCar/
-repo_url: https://github.com/UCAEngineeringPhysics/BearCar/
-nav:
-  - Home: index.md
-    # - Quick Start: quick_start.md
-  - Wiring Guide: wiring.md
-  - Components List: components.md
-  - Assembly Guide: assembly.md
-  - Gamepad Keymap: gamepad.md
-  - Mode Indicator: led.md
-  - Pilot Configurations: configs.md
-    # - Software Installation and Test Guide: software.md
-  - Data Collection Guide: data.md
-  - Autopilot Training Guide: learn.md
-  - Autopilot Deployment Guide: autopilot.md
-  # - API Reference: api.md
+site_url: https://UCAEngineeringPhysics.github.io/bearcar_docs/
+repo_url: https://github.com/UCAEngineeringPhysics/bearcar_docs
+edit_uri: edit/main/docs/
 
 theme:
-  name: readthedocs
+  name: material
+  features:
+    - navigation.tabs        # Top navigation bar
+    - navigation.sections    # Sidebar grouping
+    - content.code.copy      # Copy button on code blocks
+    - content.tooltips
+    - navigation.top         # "Back to top" button
+  palette:
+    # Light Mode
+    - scheme: default
+      primary: purple
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+# Extensions to make your docs powerful
+markdown_extensions:
+  - admonition                # Info/Warning boxes
+  - abbr                      # Abbreviations
+  - attr_list                 # <--- CRITICAL: Allows { width=300 } for images
+  - md_in_html
+  - pymdownx.details          # Collapsible sections
+  - pymdownx.superfences:     # Mermaid Diagrams
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:       # Code highlighting
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:      # Math/LaTeX support
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# MathJax setup for rendering equations
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Custom CSS for your Grid Cards
+extra_css:
+  - stylesheets/extra.css
+
+# nav:
+#   - Home: index.md
+#     # - Quick Start: quick_start.md
+#   - Wiring Guide: wiring.md
+#   - Components List: components.md
+#   - Assembly Guide: assembly.md
+#   - Gamepad Keymap: gamepad.md
+#   - Mode Indicator: led.md
+#   - Pilot Configurations: configs.md
+#     # - Software Installation and Test Guide: software.md
+#   - Data Collection Guide: data.md
+#   - Autopilot Training Guide: learn.md
+#   - Autopilot Deployment Guide: autopilot.md
+#   # - API Reference: api.md
+#
+# theme:
+#   name: readthedocs
