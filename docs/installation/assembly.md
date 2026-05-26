@@ -1,6 +1,7 @@
 # Hardware Customization Guide
 
-We recommend you to follow the orders below to assemble your BearCar
+!! tip
+It is recommended to follow the order of the steps below to assemble your BearCar.
 
 ## 1 ESC Upgrade
 
