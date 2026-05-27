@@ -11,7 +11,7 @@ Therefore, we need to put a microcontroller-friendly ESC on the board.
 ### 1.1 Body Cover Removal
 
 Remove 4 body clipping pins as circled in the picture below.
-![cover_removal](images/assembly/cover_removal.png)
+![cover_removal](assets/images/assemble/cover_removal.png)
 
 ### 1.2 Stock ESC Removal
 
@@ -23,7 +23,7 @@ Remove 4 body clipping pins as circled in the picture below.
 
 The frame that embracing the steering servo motor will be revealed after removal of the stock ESC.
 
-![esc_removal](images/assembly/esc_removal.png)
+![esc_removal](assets/images/assemble/esc_removal.png)
 
 ### 1.3 Quicrun ESC Installation
 
@@ -33,7 +33,7 @@ The frame that embracing the steering servo motor will be revealed after removal
 - Set the driving mode to __F/R__ by removing the jumper cap on the top row of the 3x2 header pins.
 - Notify the ESC that __LiPO__ battery will be used by placing the jumper cat on the bottom row of the 3x2 header pins.
 
-![esc_install](images/assembly/esc_install.jpg)
+![esc_install](assets/images/assemble/esc_install.jpg)
 
 ## 2 Wire Splitter Assembly
 
@@ -50,11 +50,11 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 
 ### 2.1 Pre-Assembled
 
-![splitter pre-assemble](images/assembly/pre_splitter.jpg)
+![splitter pre-assemble](assets/images/assemble/pre_splitter.jpg)
 
 ### 2.2 Post-Assembled
 
-![splitter post-assemble](images/assembly/post_splitter.jpg)
+![splitter post-assemble](assets/images/assemble/post_splitter.jpg)
 
 ## 3 Frame Bed Assembly
 
@@ -62,14 +62,14 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 
 - 2xM2.5-12 screws and 2xM2.5 nuts.
 
-![splitter install](images/assembly/splitter_install.jpg)
+![splitter install](assets/images/assemble/splitter_install.jpg)
 
 ### 3.2 RPi Power Expansion Board Installation
 
 - 4xM2.5-15 standoffs
 - (Optional) 4xM2.5 nuts, for under the bed secure.
 
-![peb_install](images/assembly/peb_install.png)
+![peb_install](assets/images/assemble/peb_install.png)
 
 ### 3.3 Raspberry Pi 5 Installation
 
@@ -77,13 +77,13 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 - It is recommended to attach the camera cable at this step.
 - Watch out camera cable's direction.
 
-![pi5_install](images/assembly/pi5_install.jpg)
+![pi5_install](images/assemblassets/images/assembley/pi5_install.jpg)
 
 ### 3.4 Pico Carrier Installation
 
 - 4xM2.5-6 screws
 
-![carrier_install](images/assembly/carrier_install.jpg)
+![carrier_install](assets/images/assemble/carrier_install.jpg)
 
 ## 4 Frame Handle Assembly
 
@@ -91,23 +91,23 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 
 - 3xM4-10 screws
 
-![handle_bed_assemble](images/assembly/handle_bed_assemble.jpg)
+![handle_bed_assemble](assets/images/assemble/handle_bed_assemble.jpg)
 
 ### 4.2 Raspberry Pi Camera Assembly
 
 - Watch out for camera cable's direction.
 
-![picam_assemble](images/assembly/picam_assemble.jpg)
+![picam_assemble](assets/images/assemble/picam_assemble.jpg)
 
 ### 4.3 Camera Assembly Installation
 
-![cam_install](images/assembly/cam_install.jpg)
+![cam_install](assets/images/assemble/cam_install.jpg)
 
 ## 5 Car-Frame Integration
 
 ### 5.1 Attach ESC switch
 
-![switch_install](images/assembly/switch_install.jpg)
+![switch_install](assets/images/assemble/switch_install.jpg)
 
 ### 5.2 ESC and Servo Wiring
 
@@ -115,7 +115,7 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 - Red - VBEC
 - Black - GND
 
-![esc_servo_carrier](images/assembly/esc_servo_carrier.jpg)
+![esc_servo_carrier](assets/images/assemble/esc_servo_carrier.jpg)
 
 ### 5.3 Connect Power Wires
 
@@ -129,4 +129,4 @@ We recommend you to plug positive wires to the orange channels, and negative wir
 - Connect Pico and Pi 5 using micro-USB cable.
 - Connect battery.
 
-![finish_assemble](images/bearcar_annotate.png)
+![finish_assemble](assets/images/assemble.png)
