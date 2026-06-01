@@ -1,4 +1,4 @@
-# Hardware Customization Guide
+# Assembling Guide
 
 !! tip
 It is recommended to follow the order of the steps below to assemble your BearCar.
@@ -8,32 +8,39 @@ It is recommended to follow the order of the steps below to assemble your BearCa
 The RC car comes with a receiver integrated ESC, which is not ideal for hacking the drivetrain (Thank to [DonkeyCar's FAQ](https://docs.donkeycar.com/support/faq/)).
 Therefore, we need to put a microcontroller-friendly ESC on the board.
 
-### 1.1 Body Cover Removal
+### 1.1 Remove Stock Cover
 
-Remove 4 body clipping pins as circled in the picture below.
-![cover_removal](assets/images/assemble/cover_removal.png)
+Expose the components under the hood by removing the clips as shown below.
 
-### 1.2 Stock ESC Removal
+![remove_clips](assets/images/assemble/remove_clips.png)
+
+### 1.2 Remove Stock ESC
 
 - Disconnect and remove the battery.
-- Unplug the motor wires (blue and yellow) on the ESC end.
+- Unplug the motor wires (blue and yellow).
+    !!! warning
+        Unplug motor wires **on the ESC**.
 - Unplug two sets of signal wires with Futaba connectors on the ESC 3x3 pin connector.
 - Cut the zip-tie on the signal wires.
 - Remove two screws locking the stock ESC.
 
-The frame that embracing the steering servo motor will be revealed after removal of the stock ESC.
+???+ tip
+    The bracket that embracing the servo motor will be revealed after the removal of the stock ESC.
 
-![esc_removal](assets/images/assemble/esc_removal.png)
+![remove_esc](assets/images/assemble/remove_esc.png)
 
-### 1.3 Quicrun ESC Installation
+### 1.3 Quicrun 1060 Brushed ESC Installation
 
-- You can simply tape the Quicrun ESC on top of the servo frame.
+- Set the driving mode to **F/R** by removing the jumper cap on the top row of the 3x2 header pins.
+- Notify the ESC that **LiPO** battery will be used by placing the jumper hat on the bottom row of the 3x2 header pins.
 - Connect the motor wires (yellow and blue) to the new ESC (matching the color is recommended).
-- It is recommended to mount the new ESC in direction as below picture shown.
-- Set the driving mode to __F/R__ by removing the jumper cap on the top row of the 3x2 header pins.
-- Notify the ESC that __LiPO__ battery will be used by placing the jumper cat on the bottom row of the 3x2 header pins.
+    !!! success
+        It is recommended to mount the new ESC in direction as below picture shown.
+- Mount upgraded ESC on top of the servo bracket.
+    !!! tip
+        You can simply tape the ESC.
 
-![esc_install](assets/images/assemble/esc_install.jpg)
+![mount_esc](assets/images/assemble/mount_esc.webp)
 
 ## 2 Wire Splitter Assembly
 
@@ -42,11 +49,11 @@ The channels in same color are connected together.
 We recommend you to plug positive wires to the orange channels, and negative wires to the blue channels.
 
 - (Optional) Peel extra skin off the wires. Or the levers may bite the skins instead of the exposed metal (broken circuit).
-- Insert wires with __male__ T-plug connector to the __input__ end.
-- Insert wires with __female__ T-plug connector to the __output__ end.
-- Insert wires with JST-XH connector to the __output__ end.
+- Insert wires with **male** T-plug connector to the **input** end.
+- Insert wires with **female** T-plug connector to the **output** end.
+- Insert wires with JST-XH connector to the **output** end.
 
-> __WARNING:__ Finger pinch hazard.
+> **WARNING:** Finger pinch hazard.
 
 ### 2.1 Pre-Assembled
 
