@@ -1,7 +1,8 @@
 # Assembling Guide
 
-!! tip
-It is recommended to follow the order of the steps below to assemble your BearCar.
+!!! tip
+    It is recommended to follow the order of the steps below.
+
 
 ## 1 ESC Upgrade
 
@@ -18,8 +19,8 @@ Expose the components under the hood by removing the clips as shown below.
 
 - Disconnect and remove the battery.
 - Unplug the motor wires (blue and yellow).
-    !!! warning
-        Unplug motor wires **on the ESC**.
+!!! warning
+    Unplug motor wires **on the ESC**.
 - Unplug two sets of signal wires with Futaba connectors on the ESC 3x3 pin connector.
 - Cut the zip-tie on the signal wires.
 - Remove two screws locking the stock ESC.
@@ -34,34 +35,42 @@ Expose the components under the hood by removing the clips as shown below.
 - Set the driving mode to **F/R** by removing the jumper cap on the top row of the 3x2 header pins.
 - Notify the ESC that **LiPO** battery will be used by placing the jumper hat on the bottom row of the 3x2 header pins.
 - Connect the motor wires (yellow and blue) to the new ESC (matching the color is recommended).
-    !!! success
-        It is recommended to mount the new ESC in direction as below picture shown.
+!!! success
+    It is recommended to mount the new ESC in direction as below picture shown.
 - Mount upgraded ESC on top of the servo bracket.
-    !!! tip
-        You can simply tape the ESC.
+!!! tip
+    You can simply tape the ESC.
 
 ![mount_esc](assets/images/assemble/mount_esc.webp)
 
-## 2 Wire Splitter Assembly
 
-The wire splitter splits the 2 input channel into 4 output channels.
-The channels in same color are connected together.
-We recommend you to plug positive wires to the orange channels, and negative wires to the blue channels.
+## 2 Assemble Power Distributor
 
-- (Optional) Peel extra skin off the wires. Or the levers may bite the skins instead of the exposed metal (broken circuit).
-- Insert wires with **male** T-plug connector to the **input** end.
-- Insert wires with **female** T-plug connector to the **output** end.
-- Insert wires with JST-XH connector to the **output** end.
+The core of the power distributor is a 2-input, 6-output wire splitter.
+The wires in the same color are connected together.
 
-> **WARNING:** Finger pinch hazard.
+### 2.1 Preparation
+- 1x 2-in, 6-out wire splitter.
+- 1x Male T-Plug wires.
+- 1x Female T-Plug wires.
+- 1x Male JST-XH wires.
+- 1x Female JST-RCY wires.
 
-### 2.1 Pre-Assembled
+???+ tip
+    Peel extra skin off the wires. 
+    Or the levers may bite the skins instead of the exposed metal (broken circuit).
 
-![splitter pre-assemble](assets/images/assemble/pre_splitter.jpg)
+![pre_power_distribution](assets/images/assemble/pre_power_distribution.png)
 
-### 2.2 Post-Assembled
+### 2.2 Assembly
+!!! success
+    It is highly recommended to plug positive wires to the orange channels, and negative wires to the blue channels.
 
-![splitter post-assemble](assets/images/assemble/post_splitter.jpg)
+!!! danger
+    Finger pinch hazard.
+
+![power_distributor](assets/images/assemble/power_distributor.png)
+
 
 ## 3 Frame Bed Assembly
 
