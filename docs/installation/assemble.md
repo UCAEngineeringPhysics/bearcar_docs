@@ -49,7 +49,7 @@ Expose the components under the hood by removing the clips as shown below.
 The core of the power distributor is a 2-input, 6-output wire splitter.
 The wires in the same color are connected together.
 
-### 2.1 Preparation
+### 2.1 Prepare
 - 1x 2-in, 6-out wire splitter.
 - 1x Male T-Plug wires (input).
 - 1x Female T-Plug wires (output).
@@ -62,7 +62,7 @@ The wires in the same color are connected together.
 
 ![pre_power_distribution](assets/images/assemble/pre_power_distribution.png)
 
-### 2.2 Assembly
+### 2.2 Assemble
 !!! success
     It is highly recommended to plug positive wires to the orange channels, and negative wires to the blue channels.
 
@@ -79,32 +79,56 @@ The wires in the same color are connected together.
 
 ## 3 Stack Control Tower
 
-### 3.1 Splitter Assembly Installation
+### 3.1 Prepare
+- 4x M2.5 nuts
+- 4x M2.5x6mm screws
+- 4x M2.5x6mm+6mm standoffs
+- 8x M2.5x16mm+6mm standoffs
+- 1x Yahboom power expansion board
+- 1x Raspberry Pi 5
+- 1x BearCar relay board
+- 1x Raspberry Pi Camera Module 3
+- 1x Raspberry Pi Pico 2
+- 1x GY-521 MPU6050 IMU breakout board
 
-- 2xM2.5-12 screws and 2xM2.5 nuts.
+![pre_control_tower_bolts](assets/images/assemble/pre_control_tower_bolts.png)
+![pre_control_tower_electronics](assets/images/assemble/pre_control_tower_electronics.png)
 
-![splitter install](assets/images/assemble/splitter_install.jpg)
+### 3.2 Set foundation
+!!! success
+    Need 4x M2.5x6mm+6mm standoffs and 4x M2.5 nuts
 
-### 3.2 RPi Power Expansion Board Installation
+![tower_foundation](assets/images/assemble/tower_foundation.png)
 
-- 4xM2.5-15 standoffs
-- (Optional) 4xM2.5 nuts, for under the bed secure.
+### 3.3 Stack power expansion board
+!!! success
+    Need 1x Yahboom power expansion board and 4x M2.5x16mm+6mm standoffs.
 
-![peb_install](assets/images/assemble/peb_install.png)
+![peb_stack](images/assemblassets/images/assembley/peb_stack.png)
 
-### 3.3 Raspberry Pi 5 Installation
+### 3.4 Stack Raspberry Pi
+!!! success
+    Need 1x Raspberry Pi 5 and 4x M2.5x16mm+6mm standoffs.
 
-- 22-Pin to 15-Pin RPi camera cable.
-- It is recommended to attach the camera cable at this step.
-- Watch out camera cable's direction.
+![pi_stack](assets/images/assemble/pi_stack.png)
 
-![pi5_install](images/assemblassets/images/assembley/pi5_install.jpg)
+### 3.5 Insert Pi camera
+!!! success
+    Need 1x Raspberry Pi Camera Module 3
 
-### 3.4 Pico Carrier Installation
+![mount_camera](assets/images/assemble/pi_stack.png)
 
-- 4xM2.5-6 screws
+### 3.6 Stack relay board
+!!! success
+    Need 1x BearCar relay board and 4x M2.5x16mm+6mm standoffs.
 
-![carrier_install](assets/images/assemble/carrier_install.jpg)
+![relay_stack](assets/images/assemble/relay_stack.png)
+
+### 3.7 Stack Pico and IMU
+!!! success
+    Need 1x Raspberry Pi Pico 2, 1x GY-521 MPU6050 breakout board and 4x M2.5x6mm screws.
+
+![pico_imu_stack](assets/images/assemble/pico_imu_stack.png)
 
 ## 4 Frame Handle Assembly
 
