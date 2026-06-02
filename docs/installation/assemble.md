@@ -130,48 +130,32 @@ The wires in the same color are connected together.
 
 ![pico_imu_stack](assets/images/assemble/pico_imu_stack.png)
 
-## 4 Frame Handle Assembly
+## 4 Assemble (Handled) Shield
 
-### 4.1 Handle Bed Assembly
+### 4.1 Put camera in case
 
-- 3xM4-10 screws
+!!! warning
+    Careful with camera cable's facing.
 
-![handle_bed_assemble](assets/images/assemble/handle_bed_assemble.jpg)
+![camera_case](assets/images/assemble/camera_case.png)
 
-### 4.2 Raspberry Pi Camera Assembly
+### 4.2 Assemble handle
+!!! success
+    Need 3x M4x16mm screws.
 
-- Watch out for camera cable's direction.
+![shield_assemble](assets/images/assemble/shield_assemble.png)
 
-![picam_assemble](assets/images/assemble/picam_assemble.jpg)
+## 5 Car-Shield Integration
 
-### 4.3 Camera Assembly Installation
+![integrate_car_shield](assets/images/assemble/integrate_car_shield.png)
 
-![cam_install](assets/images/assemble/cam_install.jpg)
+![integrate_car_shield2](assets/images/assemble/integrate_car_shield2.png)
 
-## 5 Car-Frame Integration
+!!!note "ESC and Servo Wiring"
+    - White - Sig
+    - Red - VBEC
+    - Black - GND
 
-### 5.1 Attach ESC switch
 
-![switch_install](assets/images/assemble/switch_install.jpg)
 
-### 5.2 ESC and Servo Wiring
-
-- White - Sig
-- Red - VBEC
-- Black - GND
-
-![esc_servo_carrier](assets/images/assemble/esc_servo_carrier.jpg)
-
-### 5.3 Connect Power Wires
-
-- Male T-plug to battery.
-- Female T-plug to ESC.
-- JST-XH to RPi power expansion board.
-
-### 5.4 Finish Frame Assembly
-
-- Fasten frame bed to car chassis.
-- Connect Pico and Pi 5 using micro-USB cable.
-- Connect battery.
-
-![finish_assemble](assets/images/assemble.png)
+![portrait_clean](assets/images/assemble/portrait_clean.png)
