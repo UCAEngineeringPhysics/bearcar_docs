@@ -51,10 +51,10 @@ The wires in the same color are connected together.
 
 ### 2.1 Preparation
 - 1x 2-in, 6-out wire splitter.
-- 1x Male T-Plug wires.
-- 1x Female T-Plug wires.
-- 1x Male JST-XH wires.
-- 1x Female JST-RCY wires.
+- 1x Male T-Plug wires (input).
+- 1x Female T-Plug wires (output).
+- 1x Male JST-XH wires (output).
+- 1x Female JST-RCY wires (output).
 
 ???+ tip
     Peel extra skin off the wires. 
@@ -71,8 +71,13 @@ The wires in the same color are connected together.
 
 ![power_distributor](assets/images/assemble/power_distributor.png)
 
+### 2.3 Attach to the bed
+!!! success
+    Need 2x M2.5x12mm screws and 2x M2.5 nuts
 
-## 3 Frame Bed Assembly
+![pd_on_bed](assets/images/assemble/pd_on_bed.png)
+
+## 3 Stack Control Tower
 
 ### 3.1 Splitter Assembly Installation
 
