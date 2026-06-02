@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://UCAEngineeringPhysics.github.io/bearcar_docs/">
+        <link rel="canonical" href="https://UCAEngineeringPhysics.github.io/bearcar_docs/installation/wiring/">
       
       
+        <link rel="prev" href="../setup_pico/">
       
-        <link rel="next" href="installation/assemble/">
+      
+        <link rel="next" href="../../usage/autopilot/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>BearCar Documentation</title>
+        <title>Wiring Diagrams - BearCar Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#meet-bearcar" class="md-skip">
+        <a href="#wiring-diagrams" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="BearCar Documentation" class="md-header__button md-logo" aria-label="BearCar Documentation" data-md-component="logo">
+    <a href="../.." title="BearCar Documentation" class="md-header__button md-logo" aria-label="BearCar Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Meet BearCar
+              Wiring Diagrams
             
           </span>
         </div>
@@ -219,11 +221,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -240,11 +240,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="installation/assemble/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../assemble/" class="md-tabs__link">
           
   
   
@@ -264,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="usage/autopilot/" class="md-tabs__link">
+        <a href="../../usage/autopilot/" class="md-tabs__link">
           
   
   
@@ -298,7 +300,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="BearCar Documentation" class="md-nav__button md-logo" aria-label="BearCar Documentation" data-md-component="logo">
+    <a href="../.." title="BearCar Documentation" class="md-nav__button md-logo" aria-label="BearCar Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -325,37 +327,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Meet BearCar
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -371,48 +346,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-specifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Specifications
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -421,26 +354,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -458,7 +396,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -476,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/assemble/" class="md-nav__link">
+      <a href="../assemble/" class="md-nav__link">
         
   
   
@@ -504,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/components/" class="md-nav__link">
+      <a href="../components/" class="md-nav__link">
         
   
   
@@ -532,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/setup_pico/" class="md-nav__link">
+      <a href="../setup_pico/" class="md-nav__link">
         
   
   
@@ -557,10 +495,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="installation/wiring/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiring Diagrams
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -576,6 +541,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#breadboard-experiment-with-pico-esc-and-servo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breadboard Experiment with Pico, ESC and Servo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivetrain-wiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drivetrain Wiring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explain-the-drivetrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explain the Drivetrain
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -647,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/autopilot/" class="md-nav__link">
+      <a href="../../usage/autopilot/" class="md-nav__link">
         
   
   
@@ -675,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/configs/" class="md-nav__link">
+      <a href="../../usage/configs/" class="md-nav__link">
         
   
   
@@ -703,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/data/" class="md-nav__link">
+      <a href="../../usage/data/" class="md-nav__link">
         
   
   
@@ -731,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/gamepad/" class="md-nav__link">
+      <a href="../../usage/gamepad/" class="md-nav__link">
         
   
   
@@ -759,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/learn/" class="md-nav__link">
+      <a href="../../usage/learn/" class="md-nav__link">
         
   
   
@@ -787,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage/led/" class="md-nav__link">
+      <a href="../../usage/led/" class="md-nav__link">
         
   
   
@@ -842,10 +860,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-specifications" class="md-nav__link">
+  <a href="#breadboard-experiment-with-pico-esc-and-servo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Specifications
+        Breadboard Experiment with Pico, ESC and Servo
       
     </span>
   </a>
@@ -853,10 +871,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#drivetrain-wiring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resources
+        Drivetrain Wiring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explain-the-drivetrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explain the Drivetrain
       
     </span>
   </a>
@@ -883,52 +912,34 @@
   
 
 
-<h1 id="meet-bearcar">Meet BearCar</h1>
-<p><strong>BearCar</strong> is an open-source self-driving platform.
-It is designed for educational purposes with emphases on robotics, and autonomous driving powered by AI (behavioral-cloning).
-It customizes an off-the-shelf toy RC car into a full autonomous driving robot.
-It features Raspberry Pi family products, including a <strong>Raspberry Pi (5)</strong> computer making plans, and a <strong>Raspberry Pi Pico (2)</strong> microcontroller executing the plans.
-All the software is developed in Python.</p>
-<p><img alt="portrait" src="assets/images/annotated_portrait.png" /></p>
-<h2 id="key-specifications">Key Specifications</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Features</th>
-<th style="text-align: left;">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Size</strong></td>
-<td style="text-align: left;">1:16</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Microcontroller</strong></td>
-<td style="text-align: left;">Raspberry Pi Pico 2 (RP2350)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>MicroPython Firmware</strong></td>
-<td style="text-align: left;">1.28.0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Computer</strong></td>
-<td style="text-align: left;">Raspberry Pi 5 (4GB)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Operating System</strong></td>
-<td style="text-align: left;">Raspberry Pi OS (trixie)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="resources">Resources</h2>
+<h1 id="wiring-diagrams">Wiring Diagrams</h1>
+<h2 id="breadboard-experiment-with-pico-esc-and-servo">Breadboard Experiment with Pico, ESC and Servo</h2>
+<p>For electronics beginners, we highly recommend to set up the circuit on a breadboard following the diagram below.</p>
+<blockquote>
+<p><strong>Note:</strong> this is just the signal paths.</p>
+</blockquote>
+<p><img alt="breadboard_pico_esc_servo" src="images/wiring/bb_pico_esc_servo.png" /></p>
+<h2 id="drivetrain-wiring">Drivetrain Wiring</h2>
+<p>Connect the battery to ESC, so that the Pico board can order it (ESC) to squeeze some juice and spin the motors.</p>
+<p><img alt="drivetrain_electric" src="images/wiring/drivetrain_electric.png" /></p>
+<h2 id="explain-the-drivetrain">Explain the Drivetrain</h2>
 <ul>
-<li>Mechanical design: <a href="https://github.com/ucaengineeringphysics/bearcar_me.git">https://github.com/ucaengineeringphysics/bearcar_me</a></li>
-<li>Electrical design: <a href="https://github.com/ucaengineeringphysics/bearcar_ee.git">https://github.com/ucaengineeringphysics/bearcar_ee</a></li>
-<li>Microcontroller software: <a href="https://github.com/ucaengineeringphysics/bearcar_pico.git">https://github.com/ucaengineeringphysics/bearcar_pico</a></li>
-<li>Computer software: <a href="https://github.com/ucaengineeringphysics/BearCar.git">https://github.com/ucaengineeringphysics/BearCar</a></li>
-<li>Documentation (this site): <a href="https://github.com/ucaengineeringphysics/bearcar_docs.git">https://github.com/ucaengineeringphysics/bearcar_docs</a></li>
+<li>The ESC (Electronic Speed Controller) governs the main engine motor's speed.
+And thus, it determines how fast the BearCar can go.</li>
+<li>The servo motor (underneath ESC) has a position feedback circuit built-in.
+Hence, it determines the steering angle of the BearCar.</li>
+<li>The Quicrun 1060 Brushed ESC has a BEC (Battery Elimination Circuit).
+It is capable of outputting 6V 3A electric energy.
+It is used to power the steering servo, and thus eliminates the need for another battery.</li>
+<li>Neither Raspberry Pi 5 nor the Pico board is powerful enough to directly drive the motors (especially the main engine).
+So, a battery pack like a LiPO battery is needed to satisfy the energy hungry motors.</li>
+<li>The Pico board uses 50Hz PWM (Pulse Width Modulation) signal to tell ESC how fast the main engine should run.</li>
 </ul>
+<p><img alt="esc_motor_pwm" src="images/wiring/esc_motor_pwm.png" /></p>
+<ul>
+<li>The Pico board also uses 50Hz PWM signal to tell servo what angle it should spin to.</li>
+</ul>
+<p><img alt="servo_pwm" src="images/wiring/servo_pwm.png" /></p>
 
 
 
@@ -984,12 +995,12 @@ All the software is developed in Python.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.tooltips", "navigation.top"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.tooltips", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
