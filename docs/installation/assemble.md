@@ -3,7 +3,6 @@
 !!! tip
     It is recommended to follow the order of the steps below.
 
-
 ## 1 ESC Upgrade
 
 The RC car comes with a receiver integrated ESC, which is not ideal for hacking the drivetrain (Thank to [DonkeyCar's FAQ](https://docs.donkeycar.com/support/faq/)).
@@ -43,13 +42,13 @@ Expose the components under the hood by removing the clips as shown below.
 
 ![mount_esc](assets/images/assemble/mount_esc.webp)
 
-
 ## 2 Assemble Power Distributor
 
 The core of the power distributor is a 2-input, 6-output wire splitter.
 The wires in the same color are connected together.
 
 ### 2.1 Prepare
+
 - 1x 2-in, 6-out wire splitter.
 - 1x Male T-Plug wires (input).
 - 1x Female T-Plug wires (output).
@@ -57,12 +56,13 @@ The wires in the same color are connected together.
 - 1x Female JST-RCY wires (output).
 
 ???+ tip
-    Peel extra skin off the wires. 
+    Peel extra skin off the wires.
     Or the levers may bite the skins instead of the exposed metal (broken circuit).
 
 ![pre_power_distribution](assets/images/assemble/pre_power_distribution.png)
 
 ### 2.2 Assemble
+
 !!! success
     It is highly recommended to plug positive wires to the orange channels, and negative wires to the blue channels.
 
@@ -72,6 +72,7 @@ The wires in the same color are connected together.
 ![power_distributor](assets/images/assemble/power_distributor.png)
 
 ### 2.3 Attach to the bed
+
 !!! success
     Need 2x M2.5x12mm screws and 2x M2.5 nuts
 
@@ -80,6 +81,7 @@ The wires in the same color are connected together.
 ## 3 Stack Control Tower
 
 ### 3.1 Prepare
+
 - 4x M2.5 nuts
 - 4x M2.5x6mm screws
 - 4x M2.5x6mm+6mm standoffs
@@ -95,36 +97,42 @@ The wires in the same color are connected together.
 ![pre_control_tower_electronics](assets/images/assemble/pre_control_tower_electronics.png)
 
 ### 3.2 Set foundation
+
 !!! success
     Need 4x M2.5x6mm+6mm standoffs and 4x M2.5 nuts
 
 ![tower_foundation](assets/images/assemble/tower_foundation.png)
 
 ### 3.3 Stack power expansion board
+
 !!! success
     Need 1x Yahboom power expansion board and 4x M2.5x16mm+6mm standoffs.
 
-![peb_stack](images/assemblassets/images/assembley/peb_stack.png)
+![peb_stack](assets/images/assemble/peb_stack.png)
 
 ### 3.4 Stack Raspberry Pi
+
 !!! success
     Need 1x Raspberry Pi 5 and 4x M2.5x16mm+6mm standoffs.
 
 ![pi_stack](assets/images/assemble/pi_stack.png)
 
 ### 3.5 Insert Pi camera
+
 !!! success
     Need 1x Raspberry Pi Camera Module 3
 
-![mount_camera](assets/images/assemble/pi_stack.png)
+![mount_camera](assets/images/assemble/mount_camera.png)
 
 ### 3.6 Stack relay board
+
 !!! success
     Need 1x BearCar relay board and 4x M2.5x16mm+6mm standoffs.
 
 ![relay_stack](assets/images/assemble/relay_stack.png)
 
 ### 3.7 Stack Pico and IMU
+
 !!! success
     Need 1x Raspberry Pi Pico 2, 1x GY-521 MPU6050 breakout board and 4x M2.5x6mm screws.
 
@@ -140,6 +148,7 @@ The wires in the same color are connected together.
 ![camera_case](assets/images/assemble/camera_case.png)
 
 ### 4.2 Assemble handle
+
 !!! success
     Need 3x M4x16mm screws.
 
@@ -155,7 +164,5 @@ The wires in the same color are connected together.
     - White - Sig
     - Red - VBEC
     - Black - GND
-
-
 
 ![portrait_clean](assets/images/assemble/portrait_clean.png)
