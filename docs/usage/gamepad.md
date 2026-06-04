@@ -1,11 +1,13 @@
 # Gamepad Keymap
 
-If you are using a Play Station like gamepad, the default keymap should be the same as shown in the image.
+If you are using a Play Station like gamepad, the default keymap should be the same as shown blow.
 
-![gamepad_keymap](images/gamepad/keymap.png)
+![gamepad_keymap](assets/images/gamepad/keymap.png)
 
-Otherwise, find index of interested buttons and joy axes using `tests/gamepad.py`
+Otherwise, you can find indices of interested buttons and joystick axes using a test scripts:
+```console
+cd ~/BearCar/scripts/tests  # navigate to right location
+uv run gamepad.py
+```
 
-## Bluetooth Connection
 
-> (To be continued...)
