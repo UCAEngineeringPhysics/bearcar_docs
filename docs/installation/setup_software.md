@@ -5,7 +5,7 @@
 
 ## Hardware List
 
-- Assembled BearCar
+- An assembled BearCar
 - A Raspberry Pi (5).
 
 !!! note
