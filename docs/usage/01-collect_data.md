@@ -1,8 +1,8 @@
 # Data Collection Guide
 
-> __On Raspberry Pi__
-
 ## Engage Human Driver
+
+> __On Raspberry Pi__
 
 ```console
 cd ~/BearCar/scripts
@@ -16,6 +16,8 @@ uv run drive.py
     - A valid data directory contains: `~/BearCar/data/YYYY-MM-DD-HH-MM/images/` directory and `~/BearCar/data/YYYY-MM-DD-HH-MM/labels.csv` file.
 
 ## Transfer Data to Computing Server
+
+> __On Raspberry Pi__
 
 You can definitely train an autopilot on the Raspberry Pi, but do so would take **forever**.
 
@@ -33,5 +35,6 @@ rsync -av --progress --partial ~/BearCar/data/YYYY-MM-DD-HH-MM USERNAME@192.168.
 
 !!!tip
     - Replace `YYYY-MM-DD-HH-MM` with actual data directory's name.
+    - To find out targeted data directory: `ls ~/BearCar/data`.
     - Replace `USERNAME` with your username on the server.
 
