@@ -1167,9 +1167,9 @@
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh<span class="w"> </span>&lt;username&gt;@&lt;ip_address&gt;
 </span></code></pre></div>
 <h3 id="example">Example</h3>
-<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ssh<span class="w"> </span>user@192.168.0.112
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ssh<span class="w"> </span>user@192.168.0.112
 </span></code></pre></div>
-You can log in to the server by inputting correct password of it.</p>
+<p>You can log in to the server by inputting correct password of it.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can localize yourself by looking at the command prompt displayed in the terminal: <code>&lt;username&gt;@&lt;hostname&gt;:&lt;current_path&gt;$</code>.
@@ -1193,6 +1193,10 @@ The best model candidate will be saved at <code>~/BearCar/data/YYYY-MM-DD-HH-MM/
 <h3 id="example_1">Example</h3>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>rsync<span class="w"> </span>-av<span class="w"> </span>--partial<span class="w"> </span>~/BearCar/data/YYYY-MM-DD-HH-MM/best_model.pth<span class="w"> </span>USERNAME@192.168.0.IP:~/BearCar/models/pilot.pth
 </span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You may need to find out the IP address of your Raspberry Pi using command: <code>ip r</code></p>
+</div>
 <h3 id="model-candidates">Model candidates</h3>
 <p>There are chances you are not satisfied with the <code>best_model</code> picked automatically by the <code>learn.py</code>.
 To take a peek on all the models, you can list all of them using following commands:</p>
@@ -1205,7 +1209,7 @@ To take a peek on all the models, you can list all of them using following comma
 </span></code></pre></div>
 <p>The model files are named as the format: <code>&lt;epoch_number&gt;-&lt;loss_type&gt;&lt;loss_value&gt;.pth</code>.
 The tailing value behind <code>mse</code> indicates the performance of the model during the training phase.
-Theoretically, The lower the value is the better the model performed. 
+Theoretically, The lower the value is the better the model performed.
 In this example, <code>ep6-mse0.3100.pth</code> was picked as the best model.
 You can transfer the second best or any model among these candidates, e.g., <code>ep5-mse0.3169.pth</code> to Raspberry Pi.</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>rsync<span class="w"> </span>-av<span class="w"> </span>--partial<span class="w"> </span>~/BearCar/data/YYYY-MM-DD-HH-MM/models/ep5-mse0.3169.pth<span class="w"> </span>USERNAME@192.168.0.IP:~/BearCar/models/newpilot.pth
