@@ -1,4 +1,5 @@
 # Setup BearCar Software
+
 ???+ tip
     BearCar software setup commands work on both Raspberry Pi and Debian derived Linux.
     Unfortunately, Windows and Mac are note supported.
@@ -31,3 +32,7 @@ cd ~/BearCar
     ```console
     rm -rf ~/BearCar/
     ```
+
+## Software Layout
+
+![software_layout](assets/images/software/software_layout.png)
