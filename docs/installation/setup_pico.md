@@ -56,10 +56,10 @@ Plug the ESC to a compatible battery pack, then execute the following steps.
 ## Troubleshooting: Nuke Pico ("Factory Reset")
 
 In case of the Pico gets frozen or is doing anything unexpected.
-You may want to nuke the Pico board (clear the Flash memory).
+You may want to [reset](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#reset-flash-memory) the Pico board.
 
-1. Download the [`flash_nuke.uf2`](https://pip.raspberrypi.com/documents/RP-008273-DS) file.
+1. Download the [`flash_nuke.uf2`](https://github.com/raspberrypi/pico-sdk-prebuilts/releases/latest/download/nuke_universal.uf2) file.
 2. Hold the white button on the Pico board while plug the Pico into the computer until the Pico is recognized as a external storage device.
-3. Drag and drop (copy and paste) the `flash_nuke.uf2` file to the external storage device.
+3. Drag and drop (copy and paste) the `nuke_universal.uf2` file to the external storage device.
 
 Now, you can repeat the steps in the previous section: [Install MicroPython Firmware](#install-micropython-firmware).
