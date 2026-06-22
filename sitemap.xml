@@ -25,18 +25,6 @@
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
-         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/miscs/configs/</loc>
-         <lastmod>2026-06-22</lastmod>
-    </url>
-    <url>
-         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/miscs/gamepad/</loc>
-         <lastmod>2026-06-22</lastmod>
-    </url>
-    <url>
-         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/miscs/led/</loc>
-         <lastmod>2026-06-22</lastmod>
-    </url>
-    <url>
          <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/usage/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
@@ -50,6 +38,18 @@
     </url>
     <url>
          <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/usage/03-deploy_autopilot/</loc>
+         <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/usage/04-gamepad/</loc>
+         <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/usage/05-status_led/</loc>
+         <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+         <loc>https://UCAEngineeringPhysics.github.io/bearcar_docs/usage/06-configs/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
 </urlset>
