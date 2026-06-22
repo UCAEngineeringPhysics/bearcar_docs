@@ -74,10 +74,14 @@ The wires in the same color are connected together (orange to orange, blue to bl
 
 ### 3.1 Prepare
 
+#### 3.1.1 Fasteners
 - 4x M2.5 nuts
 - 4x M2.5x6mm screws
 - 4x M2.5x6mm+6mm standoffs
 - 8x M2.5x16mm+6mm standoffs
+
+![pre_control_tower_bolts](assets/images/assemble/pre_control_tower_bolts.png)
+#### 3.1.2 Electronics
 - 1x Yahboom power expansion board
 - 1x Raspberry Pi 5
 - 1x BearCar relay board
@@ -85,7 +89,6 @@ The wires in the same color are connected together (orange to orange, blue to bl
 - 1x Raspberry Pi Pico 2
 - 1x GY-521 MPU6050 IMU breakout board
 
-![pre_control_tower_bolts](assets/images/assemble/pre_control_tower_bolts.png)
 ![pre_control_tower_electronics](assets/images/assemble/pre_control_tower_electronics.png)
 
 ### 3.2 Set foundation
