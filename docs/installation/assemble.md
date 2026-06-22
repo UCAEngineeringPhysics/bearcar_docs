@@ -49,6 +49,8 @@ The wires in the same color are connected together (orange to orange, blue to bl
 - 1x Female T-Plug wires (output).
 - 1x Male JST-XH wires (output).
 - 1x Female JST-RCY wires (output).
+- 2x M2.5x12mm screws
+- 2x M2.5 nuts
 
 !!! success
     Peel extra skin off the wires.
@@ -64,9 +66,6 @@ The wires in the same color are connected together (orange to orange, blue to bl
 ![power_distributor](assets/images/assemble/power_distributor.png)
 
 ### 2.3 Attach to the bed
-
-!!! note
-    Need 2x M2.5x12mm screws and 2x M2.5 nuts
 
 ![pd_on_bed](assets/images/assemble/pd_on_bed.png)
 
