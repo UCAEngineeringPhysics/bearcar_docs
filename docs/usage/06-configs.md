@@ -1,6 +1,6 @@
 # Pilot Configuration
 
-We use `scripts/configs.json` to configure the BearCar's driving experience for both human and non-human pilots.
+We use `<BEARCAR_DIR>/scripts/components/configs.json` to configure the BearCar's driving experience for both human and non-human pilots.
 
 ## `steering_joy_axis`
 
