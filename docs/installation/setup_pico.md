@@ -19,7 +19,7 @@ Fire up Thonny IDE on your Raspberry Pi then execute following steps.
 3. Select "RP2" as the "MicroPython family", "Raspberry Pi Pico 2" as the "variant", "1.28.0" as the "version".
 4. Click "Install" button to add MicroPython firmware to your Pico board.
 
-## Upload MicroPython Scripts
+## Set Up MicroPython Scripts
 
 1. Install `rshell` to MicroPython scripts.
 
@@ -28,14 +28,22 @@ Fire up Thonny IDE on your Raspberry Pi then execute following steps.
     pip install rshell --break-system-packages
     ```
 
-2. Upload action and perception modules.
+2. Download [bearcar_pico](https://github.com/UCAEngineeringPhysics/bearcar_pico) repository
+
+    ```console
+    cd ~
+    git clone https://github.com/ucaengineeringphysics/bearcar_pico.git
+    cd bearcar_pico
+    ```
+
+3. Upload action and perception modules.
 
     ```console
     rshell -p /dev/ttyACM0 --buffer-size 512 cp -r upython_scripts/perception /pyboard/
     rshell -p /dev/ttyACM0 --buffer-size 512 cp -r upython_scripts/action /pyboard/
     ```
 
-3. Upload the main script.
+4. Upload the main script.
 
     ```console
     rshell -p /dev/ttyACM0 --buffer-size 512 cp upython_scripts/pico_interface.py /pyboard/main.py
