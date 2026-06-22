@@ -74,13 +74,16 @@ The wires in the same color are connected together (orange to orange, blue to bl
 ### 3.1 Prepare
 
 #### 3.1.1 Fasteners
+
 - 4x M2.5 nuts
 - 4x M2.5x6mm screws
 - 4x M2.5x6mm+6mm standoffs
 - 8x M2.5x16mm+6mm standoffs
 
 ![pre_control_tower_bolts](assets/images/assemble/pre_control_tower_bolts.png)
+
 #### 3.1.2 Electronics
+
 - 1x Yahboom power expansion board
 - 1x Raspberry Pi 5
 - 1x BearCar relay board
@@ -154,9 +157,16 @@ The wires in the same color are connected together (orange to orange, blue to bl
 
 ![integrate_car_shield2](assets/images/assemble/integrate_car_shield2.png)
 
-!!! note "ESC and Servo Wiring"
+!!! tip "ESC and Servo Wiring"
     - White - Sig
     - Red - +6V
     - Black - GND
 
 ![portrait_clean](assets/images/assemble/portrait_clean.png)
+
+!!! success "BearCar Boot-Up"
+    1. Plug in a Raspberry Pi OS [flashed](https://www.raspberrypi.com/documentation/computers/getting-started.html#imager-install) micro-SD card to Raspberry Pi.
+    2. Connect monitor, keyboard and mouse to Raspberry Pi.
+    3. Connect battery.
+    4. Turn on the switch on the Power Expansion Board.
+    5. Turn on the ESC switch.
