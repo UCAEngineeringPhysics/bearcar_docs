@@ -17,35 +17,30 @@ Expose the components under the hood by removing the clips as shown below.
 ### 1.2 Remove Stock ESC
 
 - Disconnect and remove the battery.
-- Unplug the motor wires (blue and yellow).
-!!! warning
-    Unplug motor wires **on the ESC**.
-- Unplug two sets of signal wires with Futaba connectors on the ESC 3x3 pin connector.
+- Unplug the (blue and yellow) motor power wires (**on the ESC**) .
+- Unplug two sets of PWM signal wires with Futaba connectors on the ESC 3x3 pin connector.
 - Cut the zip-tie on the signal wires.
 - Remove two screws locking the stock ESC.
 
 ???+ tip
-    The bracket that embracing the servo motor will be revealed after the removal of the stock ESC.
+    Servo motor is underneath the ESC.
 
 ![remove_esc](assets/images/assemble/remove_esc.png)
 
-### 1.3 Quicrun 1060 Brushed ESC Installation
+### 1.3 Replace (Quicrun 1060 Brushed) ESC
 
 - Set the driving mode to **F/R** by removing the jumper cap on the top row of the 3x2 header pins.
 - Notify the ESC that **LiPO** battery will be used by placing the jumper hat on the bottom row of the 3x2 header pins.
 - Connect the motor wires (yellow and blue) to the new ESC (matching the color is recommended).
+- Mount (tape) the new ESC on top of the servo motor.
 !!! success
-    It is recommended to mount the new ESC in direction as below picture shown.
-- Mount upgraded ESC on top of the servo bracket.
-!!! tip
-    You can simply tape the ESC.
-
+    It is recommended to mount the new ESC as shown below.
 ![mount_esc](assets/images/assemble/mount_esc.webp)
 
 ## 2 Assemble Power Distributor
 
-The core of the power distributor is a 2-input, 6-output wire splitter.
-The wires in the same color are connected together.
+The power distributor is a 2-input, 6-output wire splitter.
+The wires in the same color are connected together (orange to orange, blue to blue).
 
 ### 2.1 Prepare
 
@@ -55,16 +50,13 @@ The wires in the same color are connected together.
 - 1x Male JST-XH wires (output).
 - 1x Female JST-RCY wires (output).
 
-???+ tip
+!!! success
     Peel extra skin off the wires.
     Or the levers may bite the skins instead of the exposed metal (broken circuit).
 
 ![pre_power_distribution](assets/images/assemble/pre_power_distribution.png)
 
 ### 2.2 Assemble
-
-!!! success
-    It is highly recommended to plug positive wires to the orange channels, and negative wires to the blue channels.
 
 !!! danger
     Finger pinch hazard.
@@ -73,7 +65,7 @@ The wires in the same color are connected together.
 
 ### 2.3 Attach to the bed
 
-!!! success
+!!! note
     Need 2x M2.5x12mm screws and 2x M2.5 nuts
 
 ![pd_on_bed](assets/images/assemble/pd_on_bed.png)
@@ -98,42 +90,42 @@ The wires in the same color are connected together.
 
 ### 3.2 Set foundation
 
-!!! success
+!!! note
     Need 4x M2.5x6mm+6mm standoffs and 4x M2.5 nuts
 
 ![tower_foundation](assets/images/assemble/tower_foundation.png)
 
 ### 3.3 Stack power expansion board
 
-!!! success
+!!! note
     Need 1x Yahboom power expansion board and 4x M2.5x16mm+6mm standoffs.
 
 ![peb_stack](assets/images/assemble/peb_stack.png)
 
 ### 3.4 Stack Raspberry Pi
 
-!!! success
+!!! note
     Need 1x Raspberry Pi 5 and 4x M2.5x16mm+6mm standoffs.
 
 ![pi_stack](assets/images/assemble/pi_stack.png)
 
 ### 3.5 Insert Pi camera
 
-!!! success
+!!! note
     Need 1x Raspberry Pi Camera Module 3
 
 ![mount_camera](assets/images/assemble/mount_camera.png)
 
 ### 3.6 Stack relay board
 
-!!! success
+!!! note
     Need 1x BearCar relay board and 4x M2.5x16mm+6mm standoffs.
 
 ![relay_stack](assets/images/assemble/relay_stack.png)
 
 ### 3.7 Stack Pico and IMU
 
-!!! success
+!!! note
     Need 1x Raspberry Pi Pico 2, 1x GY-521 MPU6050 breakout board and 4x M2.5x6mm screws.
 
 ![pico_imu_stack](assets/images/assemble/pico_imu_stack.png)
@@ -149,7 +141,7 @@ The wires in the same color are connected together.
 
 ### 4.2 Assemble handle
 
-!!! success
+!!! note
     Need 3x M4x16mm screws.
 
 ![shield_assemble](assets/images/assemble/shield_assemble.png)
@@ -160,9 +152,9 @@ The wires in the same color are connected together.
 
 ![integrate_car_shield2](assets/images/assemble/integrate_car_shield2.png)
 
-!!!note "ESC and Servo Wiring"
+!!! note "ESC and Servo Wiring"
     - White - Sig
-    - Red - VBEC
+    - Red - +6V
     - Black - GND
 
 ![portrait_clean](assets/images/assemble/portrait_clean.png)
