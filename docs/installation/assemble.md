@@ -158,8 +158,8 @@ The wires in the same color are connected together (orange to orange, blue to bl
 ![integrate_car_shield2](assets/images/assemble/integrate_car_shield2.png)
 
 !!! tip "ESC and Servo Wiring"
-    - White - Sig
-    - Red - +6V
+    - White - SIG
+    - Red - VBEC
     - Black - GND
 
 ![portrait_clean](assets/images/assemble/portrait_clean.png)
@@ -170,3 +170,10 @@ The wires in the same color are connected together (orange to orange, blue to bl
     3. Connect battery.
     4. Turn on the switch on the Power Expansion Board.
     5. Turn on the ESC switch.
+
+!!! warning "System Shutdown"
+    Whenever you are done with the BearCar, remember to:
+    1. Turn off the ESC.
+    2. Shutdown Raspberry Pi.
+    3. Turn off the PEB.
+    4. Disconnect the battery.
