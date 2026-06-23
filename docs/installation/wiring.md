@@ -5,13 +5,13 @@
 For electronics beginners, we highly recommend to set up the circuit on a breadboard following the diagram below.
 > __Note:__ this is just the signal paths.
 
-![breadboard_pico_esc_servo](images/wiring/bb_pico_esc_servo.png)
+![breadboard_wiring](assets/images/wiring/breadboard_wiring.png)
 
 ## Drivetrain Wiring
 
 Connect the battery to ESC, so that the Pico board can order it (ESC) to squeeze some juice and spin the motors.
 
-![drivetrain_electric](images/wiring/drivetrain_electric.png)
+![esc_servo_wiring](assets/images/wiring/esc_servo_wiring.png)
 
 ## Explain the Drivetrain
 
@@ -26,8 +26,8 @@ It is used to power the steering servo, and thus eliminates the need for another
 So, a battery pack like a LiPO battery is needed to satisfy the energy hungry motors.
 - The Pico board uses 50Hz PWM (Pulse Width Modulation) signal to tell ESC how fast the main engine should run.
 
-![esc_motor_pwm](images/wiring/esc_motor_pwm.png)
+![esc_motor_pwm](assets/images/wiring/esc_motor_pwm.png)
 
 - The Pico board also uses 50Hz PWM signal to tell servo what angle it should spin to.
 
-![servo_pwm](images/wiring/servo_pwm.png)
+![servo_pwm](assets/images/wiring/servo_pwm.png)

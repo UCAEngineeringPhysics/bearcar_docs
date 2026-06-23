@@ -25,7 +25,7 @@ Fire up Thonny IDE on your Raspberry Pi then execute following steps.
 
     ```console
     sudo apt install python3-pip
-    pip install rshell --break-system-packages
+    sudo pip install rshell --break-system-packages
     ```
 
 2. Download [bearcar_pico](https://github.com/UCAEngineeringPhysics/bearcar_pico) repository
